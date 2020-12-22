@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VkThemes
 // @include      https://vk.com/*
-// @version      0.1.01
+// @version      0.1.02
 // @description  Themes for vk
 // @author       klaseca
 // @downloadURL  https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.user.js
@@ -42,6 +42,8 @@
       linkColor: '#92A8B9',
       panelColor: '#212121',
       panelHover: '#303030',
+      panelHeader: '#303030',
+      panelHeaderHover: '#424242',
       lineColor: '#303030',
       badgeColor: '#424242',
       popupColor: '#303030',
@@ -62,7 +64,7 @@
       messagesBottom: '#242424',
       dialogColor: '#303030',
       dialogHoverOrActive: '#424242',
-      listSeparator: '#303030',
+      listSeparator: '#424242',
     },
   };
 
@@ -111,6 +113,75 @@
 
     [dir="ltr"] .profile_msg_split .profile_btn_cut_left {
       border-right: 1px solid ${theme.panelColor} !important;
+    }
+
+    /* ---- Notification style ---- */
+
+    [dir] #top_notify_wrap {
+      background: ${theme.panelColor} !important;
+      border: 1px solid ${theme.backgroundColor} !important;
+    }
+
+    [dir] .feedback_row, [dir] .feedback_sticky_row {
+      border-top: 1px solid ${theme.listSeparator} !important;
+    }
+
+    [dir] .top_notify_cont .feedback_row:not(.dld).hover,
+    [dir] .top_notify_cont .feedback_row:not(.dld):hover {
+      background-color: ${theme.popupHover} !important;
+    }
+
+    [dir] .feedback_row_clickable:not(.feedback_row_touched):hover {
+      background-color: ${theme.panelColor} !important;
+    }
+
+    .top_notify_header {
+      color: ${theme.textColor} !important;
+    }
+
+    .top_notify_cont .feedback_header {
+      color: ${theme.textColor} !important;
+    }
+
+    .top_notify_cont {
+      color: ${theme.textColor} !important;
+    }
+
+    [dir] .top_notify_show_all {
+      background-color: ${theme.panelHeader} !important;
+      border-top: 1px solid ${theme.panelHeader} !important;
+    }
+
+    [dir] .top_notify_show_all:hover {
+      background-color: ${theme.panelHeaderHover} !important;
+    }
+
+    [dir] .notify_sources_tt_content .line_cell:hover {
+      background-color: ${theme.popupHover} !important;
+    }
+
+    [dir] .notify_sources_tt_content .content:not(:hover) .line_cell.selected {
+      background-color: ${theme.panelHover} !important;
+    }
+
+    .notify_sources_tt_content .line_cell .info {
+      color: ${theme.textColor} !important;
+    }
+
+    .header_side_link, .header_side_link a {
+      color: ${theme.linkColor} !important;
+    }
+
+    [dir] .feedback_row_clickable:not(.feedback_row_touched):hover {
+      border-bottom: 1px solid ${theme.panelHeaderHover} !important;
+    }
+
+    [dir] .feed_row ~ .feed_row .feedback_row_clickable:not(.feedback_row_touched):hover {
+      border-top: 1px solid ${theme.panelHeaderHover} !important;
+    }
+
+    [dir] .page_block #all_shown {
+      border-top: 1px solid ${theme.panelHeaderHover} !important;
     }
 
     /* ---- Sticker shop style ---- */
