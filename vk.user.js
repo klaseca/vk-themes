@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VkThemes
 // @include      https://vk.com/*
-// @version      0.1.02
+// @version      0.1.03
 // @description  Themes for vk
 // @author       klaseca
 // @downloadURL  https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.user.js
@@ -117,9 +117,21 @@
 
     /* ---- Notification style ---- */
 
+    [dir] body.new_header_design .top_nav_btn.active {
+      background-color: ${theme.headerHover} !important;
+    }
+
     [dir] #top_notify_wrap {
       background: ${theme.panelColor} !important;
       border: 1px solid ${theme.backgroundColor} !important;
+    }
+
+    [dir] .feedback_row_wrap.unread:not(.feedback_row_touched) {
+      background-color: ${theme.panelColor} !important;
+    }
+
+    [dir] .top_notify_cont .top_notify_header {
+      border-top: 1px solid ${theme.listSeparator} !important;
     }
 
     [dir] .feedback_row, [dir] .feedback_sticky_row {
