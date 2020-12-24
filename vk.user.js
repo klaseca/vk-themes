@@ -841,6 +841,13 @@
       color: ${theme.textColor} !important;
     }
 
+    [dir] .page_block > :not(:empty) + * .module:first-child,
+    [dir] .page_block * > aside:not(:empty) + aside > .module:first-child,
+    [dir] .page_block > :not(:empty) ~ :empty + .module,
+    [dir] .page_block > :not(:empty) ~ :empty + aside > .module {
+      border-width: 1px 0 0 !important;
+    }
+
     b a, a b {
       color: ${theme.linkColor} !important;
     }
