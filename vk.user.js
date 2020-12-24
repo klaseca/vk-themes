@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VkThemes
 // @include      https://vk.com/*
-// @version      0.1.03
+// @version      0.1.04
 // @description  Themes for vk
 // @author       klaseca
 // @downloadURL  https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.user.js
@@ -494,11 +494,7 @@
       border-top: 1px solid #303030 !important;
     }
 
-    [dir] .video_search_input.ui_search.ui_search_new {
-      background-color: #424242 !important;
-    }
-
-    [dir] .video_search_input.ui_search.ui_search_new {
+    [dir] #video_choose_wrap > .ui_search_new.ui_search.ui_search_field_empty.video_search_input.ui_search_btn_large._wrap {
       background-color: #424242 !important;
     }
 
@@ -1465,6 +1461,11 @@
     [dir] .button_gray button {
       background-color: ${theme.buttonColor} !important;
       color: ${theme.textColor} !important;;
+    }
+
+    .page_actions_dd_label,
+    .page_actions_header_inner {
+      color: ${theme.linkColor} !important;
     }
 
     [dir] .page_actions_header {
