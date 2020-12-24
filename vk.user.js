@@ -848,6 +848,16 @@
       border-width: 1px 0 0 !important;
     }
 
+    .page_photo.page_action_menu_groups .page_actions_item.group_send_msg_status_block .group_send_msg_status_block_title {
+      color: ${theme.linkColor} !important;
+    }
+
+    a.group_app_button,
+    a.group_app_button_multi,
+    a.artist_page_button {
+      color: #9fbbdb ${theme.linkColor} !important;
+    }
+
     b a, a b {
       color: ${theme.linkColor} !important;
     }
