@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VkThemes
 // @include      https://vk.com/*
-// @version      0.1.04
+// @version      0.1.05
 // @description  Themes for vk
 // @author       klaseca
 // @downloadURL  https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.user.js
@@ -461,6 +461,74 @@
     [dir] .audio_page_player2 .audio_page_player_track_slider.slider.slider_size_1 .slider_handler,
     [dir] .audio_page_player2 .audio_page_player_volume_slider.slider.slider_size_1 .slider_handler {
       background-color: ${theme.playlistAccent} !important;
+    }
+
+    [dir] .BannerItem {
+      background-color: ${theme.panelHeader} !important;
+    }
+
+    .BannerItem__title {
+      color: ${theme.textColor} !important;
+    }
+
+    .audio_block_small_item--artist .title_link,
+    .audio_block_small_item--curator .title_link {
+      color: ${theme.textColor} !important;
+    }
+
+    .audio_page_layout .audio_item__title,
+    .audio_page_layout .audio_item__title > a {
+      color: ${theme.textColor} !important;
+    }
+
+    [dir] .audio_pl_item2 .audio_pl__cover {
+      background-color: ${theme.panelColor} !important;
+    }
+
+    [dir] .CatalogBlock__separator {
+      background-color: ${theme.listSeparator} !important;
+    }
+
+    [dir="ltr"] .CatalogSection__leftColumn {
+      border-right: 1px solid ${theme.listSeparator} !important;
+    }
+
+    [dir] .audio_page_layout .audio_friends_list {
+      background-color: ${theme.panelColor} !important;
+    }
+
+    .audio_friend_name, .audio_friend_name_now {
+      color: ${theme.textColor} !important;
+    }
+
+    .PlaceholderSmall__title {
+      color: ${theme.textColor} !important;
+    }
+
+    .PlaceholderSmall__text {
+      color: ${theme.textColor} !important;
+    }
+
+    [dir] .ui_search_new.ui_search_dark .ui_search_input_inner {
+      border: 0 !important;
+      background-color: ${theme.panelColor} !important;
+    }
+
+    [dir] .ui_search_new.ui_search_dark .ui_search_input_inner > input {
+      background-color: #303030 !important;
+    }
+
+    .CatalogBlock .ui_search_new .ui_search_button_search {
+      border: none !important;
+      background-color: #303030 !important;
+    }
+
+    [dir] .ui_search.ui_search_new {
+      border-bottom: none !important;
+    }
+
+    [dir] .audio_promo {
+      box-shadow: 0 1px 0 0 ${theme.panelColor},0 0 0 1px ${theme.panelColor} !important;
     }
 
     /* ---- Upload style ---- */
