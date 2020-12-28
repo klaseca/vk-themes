@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VkThemes
 // @include      https://vk.com/*
-// @version      0.1.05
+// @version      0.1.06
 // @description  Themes for vk
 // @author       klaseca
 // @downloadURL  https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.user.js
@@ -59,8 +59,9 @@
       popupLinkBottom: '#1e1e1e',
       popupLinkBorder: '#121212',
       messagesColor: '#212121',
-      messagesHover: '#303030',
-      messagesLine: '#303030',
+      messagesActive: '#303030',
+      messagesHover: '#353535',
+      messagesLine: '#424242',
       messagesBottom: '#242424',
       dialogColor: '#303030',
       dialogHoverOrActive: '#424242',
@@ -271,6 +272,10 @@
 
     /* ---- Video style ---- */
 
+    a > .post_video_title {
+      color: ${theme.linkColor} !important;
+    }
+
     [dir] .mv_info {
       background: #212121 !important;
     }
@@ -342,6 +347,14 @@
 
     [dir] .photos_period_delimiter_fixed {
       background-color: #303030 !important;
+    }
+
+    [dir] .pv_cont .pv_comments_header {
+      background: #303030 !important;
+    }
+
+    [dir] .pv_cont .pv_comments_header:hover {
+      background: #505050 !important;
     }
 
     /* ---- Music in header style ---- */
@@ -1152,7 +1165,7 @@
     }
 
     [dir] .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text {
-      background-color: ${theme.messagesHover} !important;
+      background-color: ${theme.messagesActive} !important;
     }
 
     [dir] .im-page_classic.im-page .im-page--dcontent {
@@ -1164,7 +1177,21 @@
     }
 
     [dir] .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic {
-      background-color: ${theme.messagesHover} !important;
+      background-color: ${theme.messagesActive} !important;
+    }
+
+    [dir] .nim-dialog:not(.nim-dialog_deleted).nim-dialog:hover,
+    [dir] .nim-dialog:not(.nim-dialog_deleted):hover + .nim-dialog,
+    [dir] .nim-dialog:not(.nim-dialog_deleted).nim-dialog.nim-dialog_hovered,
+    [dir] .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered + .nim-dialog,
+    [dir] .nim-dialog:not(.nim-dialog_deleted).nim-dialog.nim-dialog_classic.nim-dialog_unread,
+    [dir] .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic + .nim-dialog,
+    [dir] .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered + .im-search-results-head,
+    [dir] .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic + .im-search-results-head,
+    [dir] .nim-dialog:not(.nim-dialog_deleted):hover + .im-search-results-head,
+    [dir] .nim-dialog:not(.nim-dialog_deleted).nim-dialog_selected + .nim-dialog,
+    [dir] .nim-dialog:not(.nim-dialog_deleted).nim-dialog_selected + .im-search-results-head {
+      border-top: solid 1px ${theme.messagesLine} !important;
     }
 
     [dir] .nim-dialog:not(.nim-dialog_deleted).nim-dialog:hover,
@@ -1256,6 +1283,47 @@
     [dir] .im-mess.im-mess_unread + .im-mess::before,
     [dir] .im-mess.im-mess_selected + .im-mess::before {
       background-color: #303030 !important;
+    }
+
+    [dir] .im-page-pinned {
+      border-bottom: 1px solid #424242 !important;
+      background: #424242 !important;
+    }
+
+    .im-page-pinned--name {
+      color: ${theme.linkColor} !important;
+    }
+
+    .im-replied--text {
+      color: ${theme.textColor} !important;
+    }
+
+    [dir] .im-replied::before {
+      background: #212121 !important;
+    }
+
+    .im-replied--author-link {
+      color: ${theme.linkColor} !important;
+    }
+
+    [dir] .im-mess.im-mess_light {
+      background: #505050 !important;
+    }
+
+    [dir="ltr"] .im_fwd_log_wrap, [dir="ltr"] .im_wall_log_wrap {
+      border-left: 2px solid #212121 !important;
+    }
+
+    [dir] .thumbed_link__label {
+      border: 1px solid #212121 !important;
+    }
+
+    .page_doc_row .page_doc_title {
+      color: ${theme.linkColor} !important;
+    }
+
+    .thumbed_link__title {
+      color: ${theme.linkColor} !important;
     }
 
     [dir] .im-chat-input.im-chat-input_classic {
@@ -1399,12 +1467,84 @@
       background: #303030 !important;
     }
 
+    [dir] .sticker_hints_tt {
+      background-color: #303030 !important;
+      border: 1px solid #121212 !important;
+    }
+
+    [dir="ltr"] .sticker_hints_arrow {
+      border-left: 1px solid #424242 !important;
+    }
+
+    [dir] .sticker_hints_arrow {
+      background: #424242 url(/images/icons/stickers_hints_arrow.png) no-repeat 50% 50% !important;
+    }
+
+    [dir] .sticker_hints_arrow:hover {
+      background-color: #505050 !important;
+    }
+
     [dir] .ui_scroll_default_theme > .ui_scroll_bar_container > .ui_scroll_bar_outer > .ui_scroll_bar_inner {
       background-color: #212121 !important;
     }
 
     [dir] .ui_scroll_no_transition_theme.ui_scroll_scrolled > .ui_scroll_bar_container > .ui_scroll_bar_outer > .ui_scroll_bar_inner {
       background-color: #212121 !important;
+    }
+
+    [dir] .PopupHeader {
+      background: #303030 !important;
+    }
+
+    [dir] .BlockSearchInput.BlockSearchInput {
+      border-bottom: 1px solid #424242 !important;
+    }
+
+    [dir] .ListItem--border::before {
+      background: #424242 !important;
+    }
+
+    .Entity__title {
+      color: ${theme.linkColor} !important;
+    }
+
+    [dir] .ListItem--can-be-hovered.ListItem--selectable:hover, [dir] .ListItem--active {
+      border-color: #424242 !important;
+      background: #303030 !important;
+    }
+
+    .im-fwd .im-fwd--title {
+      color: ${theme.linkColor} !important;
+    }
+
+    .im-fwd.im-fwd_msg .im-fwd--messages {
+      color: ${theme.textColor} !important;
+    }
+
+    [dir="ltr"] .im-fwd {
+      border-left: solid 2px #121212 !important;
+    }
+
+    /* ---- Investments style ---- */
+
+    [dir] .wk_history_tabs {
+      background-color: #303030 !important;
+    }
+
+    [dir] #wk_history_wall {
+      background-color: #424242 !important;
+    }
+
+    .page_doc_row .page_doc_title {
+      color: ${theme.linkColor} !important;
+    }
+
+    .links-list__title {
+      color: ${theme.linkColor} !important;
+    }
+
+    [dir] .links-list__item:hover {
+      background-color: #505050 !important;
     }
 
     /* ---- Header style ---- */
