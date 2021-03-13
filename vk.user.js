@@ -1527,6 +1527,10 @@
 
     /* ---- Investments style ---- */
 
+    [dir] #wk_box {
+      background: ${theme.panelColor} !important;
+    }
+
     [dir] .wk_history_tabs {
       background-color: #303030 !important;
     }
