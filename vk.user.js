@@ -654,6 +654,10 @@
 
     /* ---- Friends style ---- */
 
+    [dir] .friends_list_bl {
+      border-top: 1px solid ${theme.listSeparator} !important;
+    }
+
     [dir] .friends_user_row {
       border-top: 1px solid ${theme.listSeparator} !important;
     }
