@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VkThemes
 // @include      https://vk.com/*
-// @version      0.1.06
+// @version      0.1.07
 // @description  Themes for vk
 // @author       klaseca
 // @downloadURL  https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.user.js
@@ -39,6 +39,7 @@
       headerColor: '#212121',
       headerHover: 'rgba(174, 183, 194, 0.12)',
       textColor: 'rgba(255, 255, 255, 0.7)',
+      textInactiveColor: 'rgba(255, 255, 255, 0.5)',
       linkColor: '#92A8B9',
       panelColor: '#212121',
       panelHover: '#303030',
@@ -1446,6 +1447,14 @@
 
     [dir="ltr"] .im-mess .im-mess--post {
       border-left: 2px solid ${theme.messagesBottom} !important;
+    }
+
+    [dir] .post_top_info_caption {
+      background: ${theme.dialogColor} !important;
+    }
+
+    .post_top_info_caption {
+      color: ${theme.textInactiveColor} !important;
     }
 
     [dir] .ms_items_more {
