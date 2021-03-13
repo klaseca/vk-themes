@@ -116,6 +116,58 @@
       border-right: 1px solid ${theme.panelColor} !important;
     }
 
+    /* ---- Settings style ---- */
+
+    [dir] .settings_line {
+      border-bottom: 1px solid ${theme.listSeparator} !important;
+    }
+
+    [dir] .settings_block_footer {
+      border-top: 1px solid ${theme.panelColor} !important;
+      background: ${theme.panelColor} !important;
+    }
+
+    [dir] .settings_privacy_row {
+      border: solid ${theme.listSeparator} !important;
+      border-width: 1px 0 !important;
+    }
+
+    [dir] .settings_separated_row + .settings_separated_row::after {
+      background: ${theme.listSeparator} !important;
+    }
+
+    [dir] .settings_block_msg {
+      border-bottom: 1px solid ${theme.listSeparator} !important;
+    }
+
+    [dir] .settings_bl_row {
+      border-bottom: 1px solid ${theme.listSeparator} !important;
+    }
+
+    [dir] .settings_apps .apps_settings_row_wrap {
+      border-bottom: 1px solid ${theme.listSeparator} !important;
+    }
+
+    [dir] .settings_table_row {
+      border-bottom: 1px solid ${theme.listSeparator} !important;
+    }
+
+    [dir] .settings_block_msg {
+      border-bottom: 1px solid ${theme.panelColor} !important;
+    }
+
+    [dir] .settings_history_table tr td {
+      border-bottom: 1px solid ${theme.listSeparator} !important;
+    }
+
+    [dir] .settings_history_table tr:last-child td {
+      border-bottom: none !important;
+    }
+
+    .settings_transfer_empty_box_header {
+      color: ${theme.textColor} !important;;
+    }
+
     /* ---- Notification style ---- */
 
     [dir] body.new_header_design .top_nav_btn.active {
