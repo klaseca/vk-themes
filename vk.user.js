@@ -996,6 +996,33 @@
       color: ${theme.linkColor} !important;
     }
 
+    .blst_title,
+    .blst_mem,
+    .idd_wrap .idd_selected_value {
+      color: ${theme.linkColor} !important;
+    }
+
+    [dir] .blst_last:hover {
+      background-color: ${theme.panelHover} !important;
+    }
+
+    [dir] .blst_row {
+      border-bottom: 1px solid ${theme.listSeparator} !important;
+    }
+
+    [dir] .bt_header {
+      border-bottom: 1px solid ${theme.listSeparator} !important;
+    }
+
+    [dir] .bp_post {
+      border: solid ${theme.listSeparator} !important;
+      border-width: 1px 0 !important;
+    }
+
+    .bp_author {
+      color: ${theme.linkColor} !important;
+    }
+
     /* ---- Community popup style ---- */
 
     .box_title_wrap.box_grey .box_title {
@@ -1643,14 +1670,6 @@
 
     .ts_contact_name {
       color: ${theme.textColor};
-    }
-
-    [dir] em.ts_clist_hl {
-
-    }
-
-    [dir] .ts_contact.active em.ts_clist_hl {
-
     }
 
     [dir] body.new_header_design .ts_cont_wrap {
