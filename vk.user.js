@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VkThemes
 // @include      https://vk.com/*
-// @version      0.1.08
+// @version      0.1.09
 // @description  Themes for vk
 // @author       klaseca
 // @downloadURL  https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.user.js
@@ -481,6 +481,10 @@
 
     [dir] .CatalogBlock--divided::before {
       box-shadow: none !important;
+    }
+
+    [dir] .CatalogBlock__layout--in_block_separator {
+      background-color: ${theme.listSeparator} !important;
     }
 
     h2 {
@@ -1942,7 +1946,7 @@
     }
 
     [dir] .like_cont {
-      border-top: 1px solid ${theme.lineColor} !important;
+      box-shadow: inset 0 1px ${theme.listSeparator} !important;
     }
 
     [dir] .ui_actions_menu {
