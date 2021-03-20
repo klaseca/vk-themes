@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VkThemes
 // @include      https://vk.com/*
-// @version      0.1.09
+// @version      0.1.10
 // @description  Themes for vk
 // @author       klaseca
 // @downloadURL  https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.user.js
@@ -1195,7 +1195,7 @@
     }
 
     [dir] .like_wrap.lite .like_cont {
-      border-top: 0 !important;
+      box-shadow: none !important;
     }
 
     [dir] .wall_module:not(.search_results) .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes) .wall_text .media_link:last-child {
