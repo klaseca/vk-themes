@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VkThemes
 // @include      https://vk.com/*
-// @version      0.1.10
+// @version      0.1.11
 // @description  Themes for vk
 // @author       klaseca
 // @downloadURL  https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.user.js
@@ -1508,7 +1508,8 @@
       background-color: ${theme.accentColor} !important;
     }
 
-    [dir] .im-mess.im-mess_unread:not(.im-mess_light) {
+    [dir] .im-mess.im-mess_unread:not(.im-mess_light),
+    [dir] .im-mess.im-mess_unread:not(.im-mess_light) .post_top_info_caption {
       background-color: ${theme.dialogHoverOrActive} !important;
     }
 
