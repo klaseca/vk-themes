@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VkThemes
 // @include      https://vk.com/*
-// @version      0.1.11
+// @version      0.1.12
 // @description  Themes for vk
 // @author       klaseca
 // @downloadURL  https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.user.js
@@ -1236,6 +1236,18 @@
     [dir] .ReplyBoxDonut {
       box-shadow: inset 0 1px 0 0 ${theme.popupColor} !important;
       background-color: ${theme.popupColor} !important;
+    }
+
+    .ui_gallery_wall_cards .wall_card__title_link {
+      color: ${theme.textColor} !important;
+    }
+
+    [dir] .feed_groups_recomm__all {
+      border-top: 1px solid ${theme.listSeparator} !important;
+    }
+
+    [dir] .ui_gallery_wall_cards.ui_gallery_groups_likes .wall_card {
+      background: ${theme.popupColor} !important;
     }
 
     /* ---- Messages style ---- */
