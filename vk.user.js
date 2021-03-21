@@ -67,6 +67,7 @@
       dialogColor: '#303030',
       dialogHoverOrActive: '#424242',
       listSeparator: '#424242',
+      votingSelect: '#5C6280'
     },
   };
 
@@ -108,6 +109,28 @@
 
     [dir="ltr"] .profile_msg_split .profile_btn_cut_left {
       border-right: 1px solid ${theme.panelColor} !important;
+    }
+
+    [dir] .media_voting {
+      box-shadow: inset 0 0 0 1px ${theme.popupColor} !important;
+      background-color: ${theme.popupColor} !important;
+    }
+
+    .media_voting_question {
+      color: ${theme.textColor} !important;
+    }
+
+    [dir] .media_voting_option {
+      background: ${theme.popupHover} !important;
+    }
+
+    .media_voting_option_text,
+    .media_voting_option_percent {
+      color: ${theme.textColor} !important;
+    }
+
+    [dir] .media_voting_option_leader .media_voting_option_bar {
+      background: ${theme.votingSelect} !important;
     }
 
     /* ---- Settings style ---- */
