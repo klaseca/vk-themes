@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VkThemes
 // @include      https://vk.com/*
-// @version      0.1.12
+// @version      0.1.13
 // @description  Themes for vk
 // @author       klaseca
 // @downloadURL  https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.user.js
@@ -131,6 +131,14 @@
 
     [dir] .media_voting_option_leader .media_voting_option_bar {
       background: ${theme.votingSelect} !important;
+    }
+
+    [dir="ltr"] .mail_link {
+      border-left: 2px solid ${theme.listSeparator} !important;
+    }
+
+    .mail_link__title {
+      color: ${theme.linkColor} !important;
     }
 
     /* ---- Settings style ---- */
