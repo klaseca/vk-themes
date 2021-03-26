@@ -1043,6 +1043,22 @@
       color: ${theme.linkColor} !important;
     }
 
+    .wide_column .topics_module .topic_title {
+      color: ${theme.linkColor} !important;
+    }
+
+    .topics_module .topic_inner_link {
+      color: ${theme.linkColor} !important;
+    }
+
+    [dir] .wide_column .topics_module .topic_row {
+      border-top: 1px solid ${theme.listSeparator} !important;
+    }
+
+    [dir] .wide_column .topics_module .topic_row:first-child {
+      border-top: none !important;
+    }
+
     /* ---- Community popup style ---- */
 
     .box_title_wrap.box_grey .box_title {
