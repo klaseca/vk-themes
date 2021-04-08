@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VkThemes
 // @include      https://vk.com/*
-// @version      0.1.13
+// @version      0.1.14
 // @description  Themes for vk
 // @author       klaseca
 // @downloadURL  https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.user.js
@@ -1250,6 +1250,7 @@
     }
 
     [dir] .media_link__label {
+      border: 1px solid ${theme.popupColor} !important;
       background-color: ${theme.popupColor} !important;
     }
 
