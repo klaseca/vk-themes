@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         VkThemes
 // @include      https://vk.com/*
-// @version      0.1.14
+// @version      0.1.15
 // @description  Themes for vk
 // @author       klaseca
 // @downloadURL  https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.user.js
 // @updateURL    https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.meta.js
 // @homepage     https://github.com/klaseca/vk-themes
-// @run-at       document-start
+// @run-at       document-body
 // ==/UserScript==
 
 (function () {
@@ -1271,7 +1271,7 @@
       border-top: 1px solid ${theme.listSeparator} !important;
     }
 
-    [dir] .ui_gallery_wall_cards.ui_gallery_groups_likes .wall_card {
+    [dir] .ui_gallery_wall_cards .wall_card {
       background: ${theme.popupColor} !important;
     }
 
