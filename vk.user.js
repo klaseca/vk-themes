@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VkThemes
 // @include      https://vk.com/*
-// @version      0.1.16
+// @version      0.1.17
 // @description  Themes for vk
 // @author       klaseca
 // @downloadURL  https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.user.js
@@ -137,6 +137,18 @@
 
     .mail_link__title {
       color: ${theme.linkColor} !important;
+    }
+
+    [dir] .post--withPostBottomAction.post--withActionStatusBar .wall_post_cont .wall_audio_rows.PostMediaRowWithActionStatusBarSeparator:last-child::after {
+      box-shadow: inset 0 -1px ${theme.lineColor} !important;
+    }
+
+    [dir] .PostBottomAction {
+      background-color: ${theme.dialogColor} !important;
+    }
+
+    [dir] .ReactionsMenu {
+      background-color: ${theme.dialogColor} !important;
     }
 
     /* ---- Settings style ---- */
