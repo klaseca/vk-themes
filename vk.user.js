@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VkThemes
 // @include      https://vk.com/*
-// @version      0.1.17
+// @version      0.1.18
 // @description  Themes for vk
 // @author       klaseca
 // @downloadURL  https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.user.js
@@ -149,6 +149,10 @@
 
     [dir] .ReactionsMenu {
       background-color: ${theme.dialogColor} !important;
+    }
+
+    [dir] .post--withPostBottomAction.post--withActionStatusBar .wall_post_cont .wall_signed:last-child {
+      box-shadow: inset 0 -1px ${theme.lineColor} !important;
     }
 
     /* ---- Settings style ---- */
