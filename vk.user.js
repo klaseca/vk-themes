@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VkThemes
 // @include      https://vk.com/*
-// @version      0.1.18
+// @version      0.1.19
 // @description  Themes for vk
 // @author       klaseca
 // @downloadURL  https://raw.githubusercontent.com/klaseca/vk-themes/master/vk.user.js
@@ -1287,6 +1287,10 @@
 
     [dir] .ui_gallery_wall_cards .wall_card {
       background: ${theme.popupColor} !important;
+    }
+
+    [dir] .post--withPostBottomAction.post--withActionStatusBar .wall_post_cont .Post__copyright:last-child {
+      box-shadow: inset 0 -1px ${theme.lineColor} !important;
     }
 
     /* ---- Messages style ---- */
